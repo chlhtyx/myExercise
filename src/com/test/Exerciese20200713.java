@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class Exerciese20200713 {
     private static int MAGIC =5;
@@ -22,14 +24,17 @@ public class Exerciese20200713 {
 //            System.out.println(a);
 //        }
 
+        int[] a = new int[]{1,2,3,99};
+        List<Integer> list = IntStream.of(a).boxed().collect(Collectors.toList());
 
-        List<List<Integer>> triangle =  new ArrayList<>();
+
+        System.out.println(Arrays.binarySearch(a,1));
 
     }
 
 
         public static int[] intersect(int[] nums1, int[] nums2) {
-            HashMap<String,Integer> countMap1 = new HashMap();
+            HashMap<String,Integer> countMap1 = new HashMap(10);
             ArrayList<Integer> arrayList  = new ArrayList();
 
 
