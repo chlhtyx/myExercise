@@ -38,7 +38,7 @@ public class Test {
 
         BASE64Decoder decoder = new BASE64Decoder();
         try {
-            byte[] buf = decoder.decodeBuffer("uWjRsy6BsLY=");
+            byte[] buf = decoder.decodeBuffer("ZTHZL6sakf83VJenQzVPiA==");
 
             byte[] bt = new byte[0];
             try {
